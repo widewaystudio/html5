@@ -1,0 +1,244 @@
+* {
+  padding: 0;
+  margin: 0;
+  style-list: none;
+}
+body {
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.wrap {
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  top: 0;
+  margin-bottom: 0;
+  overflow: hidden;
+}
+.wrap .songfile {
+  display: block;
+  margin-bottom: 3vh;
+  width: 100vw;
+  height: 50px;
+}
+.wrap .songfile ul {
+  width: 100vw;
+  min-height: 40px;
+  overflow: hidden;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 2vw;
+  margin-top: 4vh;
+  display: block;
+}
+.wrap .songfile ul .name {
+  font-size: 18px;
+}
+.wrap .songfile ul .author {
+  display: block;
+  margin-top: 1vh;
+  line-height: 20px;
+  font-size: 14px;
+}
+.wrap .songcover {
+  position: relative;
+  height: 90vw;
+  width: 90vw;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  margin: 10vw auto;
+  overflow: hidden;
+  border-radius: 45vw;
+  -moz-border-radius: 45vw;
+  -webkit-border-radius: 45vw;
+}
+.wrap .songcover .cover {
+  position: absolute;
+  overflow: hidden;
+  width: 94%;
+  height: 94%;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  margin: 3%;
+  border: 0px;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.wrap .songcover .cover img {
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+.wrap .songcontrol {
+  position: relative;
+  margin-top: 5vh;
+  min-height: 30vw;
+  width: 100vw;
+  overflow: hidden;
+  opacity: 0.5;
+}
+.wrap .songcontrol .time {
+  margin-top: 0px;
+}
+.wrap .songcontrol .time ul {
+  width: 100vw;
+  height: 30px;
+  margin-top: 5vw;
+  font-size: 12px;
+  color: #ffffff;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  box-sizing: border-box;
+  style-list: none;
+}
+.wrap .songcontrol .time ul li {
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  display: inline-block;
+}
+.wrap .songcontrol .time ul .bar {
+  width: 71vw;
+  height: 30px;
+  position: relative;
+  overflow: hidden;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+.wrap .songcontrol .time ul .bar .line,
+.wrap .songcontrol .time ul .bar .dot {
+  position: absolute;
+  height: 2px;
+  width: 94vw;
+  background-color: #888888;
+  top: 49%;
+}
+.wrap .songcontrol .time ul .bar .dot {
+  background-color: #ffffff;
+  transform: translateX(-100%);
+  left: 0px;
+}
+.wrap .songcontrol .time ul .bar .dot::after {
+  content: "";
+  display: block;
+  height: 5vw;
+  width: 5vw;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  margin-top: -2.5vw;
+  right: -5vw;
+  position: absolute;
+  background-color: #ffffff;
+  opacity: 0.8;
+}
+.wrap .songcontrol .button ul {
+  height: 11vw;
+  width: 100vw;
+  box-sizing: border-box;
+}
+.wrap .songcontrol .button ul li {
+  width: 20vw;
+  height: 20vw;
+  float: left;
+  display: block;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+}
+.wrap .songcontrol .button ul li .order,
+.wrap .songcontrol .button ul li .list {
+  width: 50px;
+  height: 30px;
+  position: absolute;
+  top: 20px;
+  left: 5px;
+}
+.wrap .songcontrol .button ul li .list {
+  left: 10px;
+}
+.wrap .songcontrol .button ul li .pre,
+.wrap .songcontrol .button ul li .next {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 18px;
+  left: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  background-image: url(../image/pre.png);
+  background-position: 11px -39px;
+  background-repeat: no-repeat;
+  background-size: 50%;
+}
+.wrap .songcontrol .button ul li .next {
+  left: 30px;
+  background-position: 12px 12px;
+}
+.wrap .songcontrol .button ul li .start,
+.wrap .songcontrol .button ul li .stop {
+  width: 65px;
+  height: 65px;
+  display: block;
+  border: 1px solid #ffffff;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  background-image: url(../image/sprite_play.png);
+  background-position: -40px -228px;
+  background-size: 65px;
+}
+.wrap .songcontrol .button ul li .stop {
+  background-position: -40px -273px;
+}
+.wrap .songcontrol .share {
+  min-height: 40px;
+  margin-top: 10px;
+}
+.wrap .songcontrol .share ul li {
+  width: 25%;
+  height: 30px;
+  box-sizing: border-box;
+  float: left;
+  display: block;
+  position: relative;
+}
+.wrap .songcontrol .share ul li .good,
+.wrap .songcontrol .share ul li .down,
+.wrap .songcontrol .share ul li .comment,
+.wrap .songcontrol .share ul li .discuss {
+  width: 30px;
+  height: 26px;
+  position: absolute;
+  right: 15px;
+}
+.wrap .songcontrol .share ul li .down {
+  right: 23px;
+}
+.wrap .songcontrol .share ul li .comment {
+  right: 30px;
+}
+.wrap .songcontrol .share ul li .discuss {
+  right: 40px;
+}
+.rotate {
+  animation: rotate 30s linear infinite;
+}
+.rotate.pause {
+  animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  -webkit-animation-play-state: paused;
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(1turn);
+  }
+}

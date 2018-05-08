@@ -1,0 +1,42 @@
+﻿[
+	{
+		"image":"./source/1.jpg",
+		"audio":"./source/1.mp3",
+		"song" : "经典永流传",
+		"singer":"张杰",
+		"duration":0,
+		"isLike":true
+	},
+	{
+		"image":"./source/2.jpg",
+		"audio":"./source/2.mp3",
+		"song" : "只住我自己",
+		"singer":"孙子涵",
+		"duration":0,
+		"isLike":true
+	},
+	{
+		"image":"./source/3.jpg",
+		"audio":"./source/3.mp3",
+		"song" : "想你一整夜",
+		"singer":"孙子涵",
+		"duration":0,
+		"isLike":true
+	},
+	{
+		"image":"./source/4.jpg",
+		"audio":"./source/4.mp3",
+		"song" : "Hug Me",
+		"singer":"JIHEE",
+		"duration":0,
+		"isLike":true
+	},
+	{
+		"image":"./source/5.jpg",
+		"audio":"./source/5.mp3",
+		"song" : "Freedom",
+		"singer":"Anthony Hamilton",
+		"duration":0,
+		"isLike":true
+	}
+]
